@@ -1,0 +1,196 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.box {
+    background: white;
+    width: 48%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+h2, h4 {
+    margin: 5px 0;
+}
+
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #555;
+}
+
+hr {
+    margin: 15px 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.contact {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.right-box p {
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.pics {
+    border: 10px solid #FB4141;
+    background-color: #FB4141;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.pics img {
+    border: 4px solid white;
+}
+
+.pics img:hover {
+    border: 4px solid black;
+}
+
+.skills {
+    border: 1px solid #FB4141;
+    background-color: #FB4141;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.skills h2 {
+    margin-top: 0;
+}
+
+.mainH {
+    border: 10px solid #FB4141;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.header-left {
+    margin-left: 50px;
+}
+
+.homeAbout a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.homeAbout a:hover {
+    color: #FB4141;
+}
+
+.divider {
+    color: #FB4141;
+}
+
+.thirdBox form {
+    border: 1px solid #FB4141;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #FB4141;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.inputBox,
+.messageBox {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #FB4141;
+    box-sizing: border-box;
+    color: white;
+}
+
+.inputBox::placeholder,
+.messageBox::placeholder {
+    color: white;
+    font-family: sans-serif;
+}
+
+#sendButton {
+    width: 150px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: 0.3s;
+}
+
+#sendButton:hover {
+    background-color: white;
+    color: #FB4141;
+}
+
+.footer {
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+#dateDisplay {
+    margin: 0;
+}
+
+#sendButton {
+    width: 60px;
+    padding: 4px;
+    margin-left: 0%;
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+}

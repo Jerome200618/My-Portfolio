@@ -1,0 +1,411 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1100px;
+}
+
+.box {
+    background: white;
+    width: 48%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 15px;
+    border: 4px solid white;
+    transition: 0.3s ease;
+}
+
+.profile-pic:hover {
+    border: 4px solid black;
+}
+
+body.dark-mode .profile-pic {
+    border: 4px solid white;
+}
+
+body.dark-mode .profile-pic:hover {
+    border: 4px solid black;
+}
+
+.name {
+    margin: 5px 0 15px;
+    font-size: 18px;
+    color: #555;
+}
+
+hr {
+    margin: 15px 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.thirdBox form {
+    border: 1px solid #FB4141;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 30px;
+    background-color: #FB4141;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 60%;
+    padding: 4px 8px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: #FB4141;
+}
+
+.inputBox::placeholder {
+    color: white;
+    font-family: sans-serif;
+}
+
+.messageBox {
+    width: 60%;
+    height: 100px;
+    padding: 10px;
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid white;
+    background-color: #FB4141;
+}
+
+.messageBox::placeholder {
+    color: white;
+    font-family: sans-serif;
+}
+
+label[for="Message"] {
+    margin-top: 10px;
+}
+
+.thirdBox label {
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+#sendButton {
+    width: 60px;
+    padding: 4px;
+    margin-left: 0%;
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+}
+
+#sendButton:hover {
+    background-color: white;
+    color: #FB4141;
+    cursor: pointer;
+}
+
+label[for="Email"] {
+    margin-top: 10px;
+}
+
+.mainH {
+    border: 10px solid #FB4141;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.header-left {
+    margin-left: 50px;
+}
+
+.homeAbout a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.homeAbout a:hover {
+    color: #FB4141;
+}
+
+.divider {
+    color: #FB4141;
+}
+
+#themeToggle {
+    padding: 6px 14px;
+    background-color: #FB4141;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#themeToggle:hover {
+    background-color: white;
+    color: black;
+}
+
+.left-box {
+    flex: 1;
+    width: 50%;
+}
+
+.right-box {
+    flex: 2;
+    width: 50%;
+}
+
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+h4:hover {
+    color: black;
+}
+
+#email:hover {
+    color: #FB4141;
+}
+
+.skills {
+    border: 1px solid #FB4141;
+    background-color: #FB4141;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.skills h2 {
+    margin-top: 0;
+}
+
+.skills li {
+    transition: 0.3s ease;
+}
+
+.skills li:hover {
+    color: white;
+}
+
+.contact {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contact h2 {
+    margin-top: 0;
+}
+
+.right-box p {
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.pics {
+    border: 10px solid #FB4141;
+    background-color: #FB4141;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+#changePicBtn,
+#editJobBtn {
+    padding: 6px 12px;
+    border: 2px solid #FB4141;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#changePicBtn {
+    background-color: black;
+    color: white;
+}
+
+#changePicBtn:hover {
+    background-color: white;
+    color: #FB4141;
+}
+
+#editJobBtn {
+    background-color: white;
+    color: #FB4141;
+}
+
+#editJobBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark-mode .pics {
+    background-color: #8b1d1d;
+    border-color: #8b1d1d;
+}
+
+body.dark-mode .box {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .mainH {
+    background-color: #121212;
+    border-color: #8b1d1d;
+}
+
+body.dark-mode .footer {
+    background-color: #121212;
+    border-color: #FB4141;
+}
+
+body.dark-mode .homeAbout a {
+    color: white;
+}
+
+body.dark-mode .homeAbout a:hover {
+    color: #FB4141;
+}
+
+body.dark-mode .divider {
+    color: #FB4141;
+}
+
+body.dark-mode .contact {
+    background-color: #1a1a1a;
+    border-color: #FB4141;
+}
+
+body.dark-mode .skills {
+    background-color: #8b1d1d;
+}
+
+body.dark-mode .skills li:hover {
+    color: black;
+}
+
+body.dark-mode .right-box p {
+    color: #e0e0e0;
+}
+
+body.dark-mode .thirdBox form {
+    background-color: #8b1d1d;
+    border-color: #FB4141;
+}
+
+body.dark-mode .inputBox,
+body.dark-mode .messageBox {
+    background-color: #8b1d1d;
+    border-color: #FB4141;
+    color: white;
+}
+
+body.dark-mode .inputBox::placeholder,
+body.dark-mode .messageBox::placeholder {
+    color: white;
+}
+
+.profile-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#toggleSkillsBtn {
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+#toggleSkillsBtn:hover {
+    background-color: white;
+    color: #FB4141;
+    border: 2px solid black;
+}
+
+.footer {
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+#dateDisplay {
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+
+#dateDisplay:hover {
+    color: #FB4141;
+    cursor: default;
+}
+
+body.dark-mode #dateDisplay {
+    color: white;
+}
+
+body.dark-mode #dateDisplay:hover {
+    color: #FB4141;
+}
+
+button,
+a,
+h4,
+.skills li,
+#dateDisplay,
+.inputBox,
+.messageBox,
+.pics img {
+    transition: 0.3s ease;
+}

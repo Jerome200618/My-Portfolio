@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="millares_style.css"/>
+        <title>View Me</title> 
+    </head>
+    <body>
+        <div class="mainH">
+            <div class="header-left">
+                <h2 class="homeAbout">
+                    <a href="#home">Home</a><span class="divider"> | </span>
+                    <a href="millares_lab2.html" target="_blank">Lab 2</a><span class="divider"> | </span>
+                    <a href="millares_lab3.html" target="_blank">Lab 3</a><span class="divider"> | </span>
+                    <a href="#lab4" target="_blank">Lab 4</a>
+                </h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box left-box">
+                <div class="pics">
+                    <img src="src/me.jpg" alt="My Profile Picture" class="profile-pic">
+                    <h2>Jerome P. Millares</h2>
+                    <h4>Web Developer</h4>
+                </div>
+
+                <hr>
+
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <p>Email: millaresrome@gmail.com</p>
+                </div>
+
+                <hr>
+
+                <div class="skills-container">
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box right-box">
+                <h2>About Me</h2>
+                <p>I am Jerome P. Millares, a second year BSIT student who loves learning about HTML, CSS and Javascript, and I am committed to improving everyday.</p>
+
+                <hr>
+
+                <h2>Message Me</h2>
+                <div class="thirdBox">
+                    <form>
+                        <label for="Name">Name</label>
+                        <input type="text" class="inputBox" placeholder="Enter your name" required/>
+
+                        <label for="Email">Email</label>
+                        <input type="text" class="inputBox" placeholder="Enter your email" required/>
+
+                        <label for="Message">Message</label>
+                        <textarea class="messageBox" placeholder="Write your message here..." required></textarea>
+
+                        <button type="submit" id="sendButton">Send</button>
+                    </form>
+                </div>
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p id="dateDisplay" style="text-align: center; color: white; line-height: 50px;"></p>
+        </div>
+    </body>
+</html>
